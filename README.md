@@ -8,9 +8,9 @@ These macros are for a Cisco video device that provides a means of utilizing OAu
 > As such, you can look to leverage a centralised service where these values are protected. Alternatively ensure the OAuth scopes are limited as not to cause any problems if compromised.
 
 The macro's are broken into 3 seperate files:
-1. MsftListUsers.js - this file contains the standard API call Microsoft Graph API service
-2. MsftManageTokens.js - this file manages the existing token and if needed will refresh the token
-3. MsftSavedTokens.js - this file stores the current access_token and expiry value
+1. [MsftListUsers.js](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/MsftListUsers.js) - this file contains the standard API call Microsoft Graph API service
+2. [MsftManageTokens.js](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/MsftManageTokens.js) - this file manages the existing token and if needed will refresh the token
+3. [MsftSavedTokens.js](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/MsftSavedTokens.js) - this file stores the current access_token and expiry value
 
 ## Setup
 In order to obtain a clientId and clientSecret, login to [Microsoft Entra](https://entra.microsoft.com/). Select "App registrations" and then "New registration". Provide a name for the registration and then select the "Register" button.

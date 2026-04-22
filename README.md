@@ -1,2 +1,2 @@
-# Macro-for-Microsoft-OAuth-
+# Macro for Microsoft Graph OAuth
 Hello World

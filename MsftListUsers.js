@@ -1,7 +1,7 @@
 import xapi from 'xapi';
 import {getValidAccessToken} from './MsftManageTokens';
 
-async function lookupPeople(){
+async function listAllUsers(){
   let url = "https://graph.microsoft.com/v1.0/users"
   let token = await getValidAccessToken()
   let header = `Authorization: Bearer ${token}`
@@ -30,4 +30,4 @@ async function lookupPeople(){
   }
 }
 
-lookupPeople()
+listAllUsers()

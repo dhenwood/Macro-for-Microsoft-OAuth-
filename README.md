@@ -13,7 +13,9 @@ The macro's are broken into 3 seperate files:
 3. MsftSavedTokens.js - this file stores the current access_token and expiry value
 
 ## Setup
-The creation of the clientId and clientSecret *** Add Graph specific material ***
+In order to obtain a clientId and clientSecret, login to [Microsoft Entra](https://entra.microsoft.com/). Select "App registrations" and then "New registration". Provide a name for the registration and then select the "Register" button.
+
+Copy the "Application (client) ID" and "Directory (tenant) ID" values to notepad. Then select "Certificates & secrets" from the left menu. On the "Clients secret" tab, select the "New client secret" button. Provide a name for the secret and select the duration for which the secret will expire. Once you select the "Add" button, a client secret is generated. Copy the "Value" field to notepad.
 
 Upload the three macro files (.js) from this repo to your video device. Ensure they are saved locally but at this stage do not enable them.
 

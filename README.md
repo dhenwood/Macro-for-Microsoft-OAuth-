@@ -21,4 +21,4 @@ In the MsftManageTokens macro, update the clientId, clientSecret and tenantId to
 
 For the MsftListUsers macro,  enable _only_ this macro (the other two do not need to be enabled). You should see a list of all users in the Org in the console of the Macro editor.
 
-If you exit the Macro Editor page (top left) and then return - opening the MsftSavedTokens macro should now have a new access_token and expired_at value.
+If you exit the Macro Editor page (top left) and then return - opening the MsftSavedTokens macro should now have a new access_token and expires_at value.

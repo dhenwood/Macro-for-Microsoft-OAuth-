@@ -13,20 +13,20 @@ The macro's are broken into 3 seperate files:
 3. [MsftSavedTokens.js](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/MsftSavedTokens.js) - this file stores the current access_token and expiry value
 
 ## Setup
-In order to obtain a clientId and clientSecret, login to [Microsoft Entra](https://entra.microsoft.com/). Select "App registrations" and then "New registration". Provide a name for the registration and then select the "Register" button.
+1. In order to obtain a clientId and clientSecret, login to [Microsoft Entra](https://entra.microsoft.com/). Select "App registrations" and then "New registration". Provide a name for the registration and then select the "Register" button.
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/AppRegistrationScreenshot.png)
 
-Copy the "Application (client) ID" and "Directory (tenant) ID" values to notepad.
+2. Copy the "Application (client) ID" and "Directory (tenant) ID" values to notepad.
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/ClientIdTenantIdScreenshot.png)
 
-Then select "Certificates & secrets" from the left menu. On the "Clients secret" tab, select the "New client secret" button. Provide a name for the secret and select the duration for which the secret will expire. Once you select the "Add" button, a client secret is generated. Copy the "Value" field to notepad.
+3. Then select "Certificates & secrets" from the left menu. On the "Clients secret" tab, select the "New client secret" button. Provide a name for the secret and select the duration for which the secret will expire. Once you select the "Add" button, a client secret is generated. Copy the "Value" field to notepad.
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/ClientSecretScreenshot.png)
 
-Upload the three macro files (.js) from this repo to your video device. Ensure they are saved locally but at this stage do not enable them.
+4. Upload the three macro files (.js) from this repo to your video device. Ensure they are saved locally but at this stage do not enable them.
 
-In the MsftManageTokens macro, update the clientId, clientSecret and tenantId to the values you obtained earlier.
+5. In the MsftManageTokens macro, update the **clientId, clientSecret and tenantId** to the values you obtained earlier.
 
-For the MsftListUsers macro,  enable _only_ this macro (the other two do not need to be enabled). You should see a list of all users in the Org in the console of the Macro editor.
+6. For the MsftListUsers macro,  enable _only_ this macro (the other two do not need to be enabled). You should see a list of all users in the Microsoft Tenant in the console of the Macro editor.
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/OAuthMacroExample.png)
 
-If you exit the Macro Editor page (top left) and then return - opening the MsftSavedTokens macro should now have a new access_token and expires_at value.
+Note: If you exit the Macro Editor page (top left) and then return - opening the MsftSavedTokens macro should now have a new access_token and expires_at value.

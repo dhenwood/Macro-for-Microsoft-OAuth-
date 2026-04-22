@@ -27,5 +27,6 @@ Upload the three macro files (.js) from this repo to your video device. Ensure t
 In the MsftManageTokens macro, update the clientId, clientSecret and tenantId to the values you obtained earlier.
 
 For the MsftListUsers macro,  enable _only_ this macro (the other two do not need to be enabled). You should see a list of all users in the Org in the console of the Macro editor.
+![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/OAuthMacroExample.png)
 
 If you exit the Macro Editor page (top left) and then return - opening the MsftSavedTokens macro should now have a new access_token and expires_at value.

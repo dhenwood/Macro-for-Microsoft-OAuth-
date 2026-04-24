@@ -25,7 +25,7 @@ The macro's are broken into 3 seperate files:
 4. Select the "API Permissions" from the left menu, then select "Add a permission". Select "Microsoft Graph", and "Application permissions".
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/AddApplication.png)
 
-5. In the search filter enter "user.read.all". In the Users category, enable "User.Read.All" then select "Add permissions". 
+5. In the search filter enter "user.read.all". In the Users category, enable "User.Read.All" then select "Add permissions". Enusre you press the **Grant admin consent for TenantName** button.
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/AddPermissions.png)
 
 6. Upload the three macro files (.js) from this repo to your video device. Ensure they are saved locally but at this stage do not enable them.

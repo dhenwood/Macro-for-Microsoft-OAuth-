@@ -22,11 +22,17 @@ The macro's are broken into 3 seperate files:
 3. Then select "Certificates & secrets" from the left menu. On the "Clients secret" tab, select the "New client secret" button. Provide a name for the secret and select the duration for which the secret will expire. Once you select the "Add" button, a client secret is generated. Copy the "Value" field to notepad.
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/ClientSecretScreenshot.png)
 
-4. Upload the three macro files (.js) from this repo to your video device. Ensure they are saved locally but at this stage do not enable them.
+4. Select the "API Permissions" from the left menu, then select "Add a permission". Select "Microsoft Graph", and "Application permissions".
+![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/AddApplication.png)
 
-5. In the MsftManageTokens macro, update the **clientId, clientSecret and tenantId** to the values you obtained earlier.
+5. In the search filter enter "user.read.all". In the Users category, enable "User.Read.All" then select "Add permissions". 
+![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/AddPermissions.png)
 
-6. For the MsftListUsers macro,  enable _only_ this macro (the other two do not need to be enabled). You should see a list of all users in the Microsoft Tenant in the console of the Macro editor.
+6. Upload the three macro files (.js) from this repo to your video device. Ensure they are saved locally but at this stage do not enable them.
+
+7. In the MsftManageTokens macro, update the **clientId, clientSecret and tenantId** to the values you obtained earlier.
+
+8. For the MsftListUsers macro,  enable _only_ this macro (the other two do not need to be enabled). You should see a list of all users in the Microsoft Tenant in the console of the Macro editor.
 ![AppRego](https://github.com/dhenwood/Macro-for-Microsoft-OAuth-/blob/main/OAuthMacroExample.png)
 
 Note: If you exit the Macro Editor page (top left) and then return - opening the MsftSavedTokens macro should now have a new access_token and expires_at value.
